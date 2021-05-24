@@ -1,0 +1,271 @@
+\documentclass[8pt]{article}
+\usepackage[footskip=0pt, voffset=1cm, textheight=610pt]{geometry}
+\usepackage{makecell}
+\usepackage{tabularx} 
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{xifthen}
+\usepackage[default]{sourcesanspro}
+\usepackage[T1]{fontenc}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{fontawesome}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,    
+    urlcolor=black,
+}
+
+\setlength\extrarowheight{10pt}
+\setlength\parindent{0pt}
+% \pagenumbering{gobble}
+
+\begin{document}
+\small
+
+\begin{center}
+    {\huge Lionel J. Garcia} \\
+    \vspace{0.25cm}
+    born in 1994 in France\\
+    \vspace{0.1cm}
+    {\href{mailto:lgarcia@uliege.be}{\underline{\smash{lgarcia@uliege.be}}} \hspace{1pt} \href{https://github.com/lgrcia}{\faGithub\hspace{2pt}lgrcia}}
+\end{center}
+
+% \newcommand{\block}[5]{
+%     \makecell[tr]{\color{black!80}\textbf{#3} \\ {\color{black!50}#1}\\ {\color{black!40}#4}}& 
+%     \makecell[tl]{{\color{black!70}\textbf{#2}} \\ \parbox[t]{9cm}{#5}}
+% }
+
+\newcommand{\block}[5]{
+    \makecell[tr]{\color{black!80}\textbf{#1}\\ {\color{black!50}#3} \\ {\color{black!30}#4}}& 
+    \makecell[tl]{{\color{black!70}\textbf{#2}} \\ \parbox[t]{9.2cm}{#5}}
+}
+
+% \newcommand{\block}[5]{
+%     \makecell[tr]{{\color{black!70}\textbf{#2}}\\{\color{black!50}#1}}& 
+%     \makecell[tl]{{\color{black!80}\textbf{#3}} \hspace{0pt} {\color{black!40}#4} \\ \parbox[t]{10cm}{#5}}
+% }
+
+\newcommand{\header}[1]{{\color{black!80}\large\MakeUppercase{\textbf{#1}}}}
+\newcommand{\subheader}[1]{{\color{black!80}\normalsize\textbf{#1}}}
+\newcommand{\blocktitle}[2]{
+    \makecell[tr]{{\color{black!70}\textbf{#2}}\\{\color{black!50}#1}}
+}
+
+\newcommand{\blockcontent}[3]{
+    \makecell[tl]{{\color{black!80}\textbf{#1}} {\color{black!40}#2} \\ \parbox[t]{10cm}{#3}}
+}
+
+\newcommand{\blockhead}[1]{\begin{center}\header{#1}\end{center}}
+\newcommand{\subblockhead}[1]{\begin{center}\subheader{#1}\end{center}}
+
+\newcommand{\indice}[1]{\color{black!40}\textit{#1}}
+
+\newenvironment{blocks}[1][1.3]
+{\bgroup
+\def\arraystretch{#1}
+\setstretch{#1}
+\small
+\begin{tabular}{@{}p{4cm}r}}
+{\end{tabular}
+\egroup
+\vspace{1cm}
+} 
+
+\vspace{1cm}
+
+
+\blockhead{education}
+\begin{blocks}[1.1]
+    \block{2019 - now}{PhD in Astronomy}{University of Liège}{Belgium}{Towards the detailed characterization of temperate telluric exoplanets \\ \indice{Supervisor: Michael Gillon under the SPECULOOS project}}\\
+    \block{2016 - 2017}{MSc in Computer Science}{University of Bordeaux}{France}{IT - High performance computing and Image processing}\\
+    \block{2014 - 2017}{MSc in Instrumentation}{Institut d'Optique}{France}{Photonics and Instrumentation}\\
+    \block{2012 - 2014}{Bs in Physics}{University of Paris-Sud}{France}{Applied Physics}\\
+\end{blocks}
+
+\vspace{-0.3cm}
+
+\blockhead{positions}
+\begin{blocks}
+    \block{2019 - Now}{Teaching assistant}{University of Liège}{Belgium}{Supervision of tutorial sessions at undergraduate and graduate levels (150h/year)}\\
+    \block{2018 (1 year)}{Young Graduate Trainee}{ESA-ESTEC}{Netherlands}{Development of novel strategies to build better spacecraft precursor
+    models}\\
+    \block{2017 (6 months)}{Technical Student}{CERN}{Switzerland}{Characterization and prototyping of next-generation Beam Wire
+    Scanners for the LHC injectors upgrade}\\
+    \block{2016 (3 months)}{Trainee}{ESA-ESTEC}{Netherlands}{Development and validation of a CCD cosmic ray impact simulator against
+    Gaia in-orbit data}\\
+\end{blocks}
+
+\newpage
+\blockhead{teaching}
+\begin{blocks}
+    \blocktitle{2019 - now}{University of Liège} & \blockcontent{Mechanics 101}{Tutorials - Undergraduate}{From Newtonian mechanics to the study of solids motion 
+    \\\indice{Professor: Pierre Dauby}} \\
+    {} & \blockcontent{Mathematical modeling for the environment}{Tutorials - Graduate}{Dynamical modeling of populations in their environments
+    \\\indice{Professor: Marilaure Grégoire}} \\
+    {} & \blockcontent{Astronomical observations}{Tutorials and Lectures - Graduate}{Telescope observations and applications to Astrophysics (including mentorship of student projects during a 1 week observing session at the Oukaimeden observatory, Morocco)
+    \\\indice{Professor: Emmanuel Jehin}}\\
+\end{blocks}
+\vspace{0.4cm}
+
+\newcommand{\publi}[4]{{\color{black!60}#1} & \makecell[lt]{\textbf{#2}\\\rule{0pt}{4pt}{\color{black!60} #3 \hspace{1pt} \textit{#4}}} \\
+}
+
+\blockhead{Skills}
+\vspace{0.4cm}
+
+\begin{center}
+    \centering
+    \setstretch{1.4}
+    \begin{minipage}[c]{0.3\linewidth}
+        \centering
+        \subheader{Languages}\\
+        \vspace{0.3cm}
+        English and French (fluent)\\
+        Spanish (intermediate)
+    \end{minipage}
+    \begin{minipage}[c]{0.3\linewidth}
+        \centering
+        \subheader{Programming }\\
+        \vspace{0.3cm}
+        Python\space\space C++ \space\space C\space\space Julia\\
+        (JS, HTML, CSS)\space\space LaTeX\space\space  git
+    \end{minipage}
+\end{center}
+
+\vspace{1.2cm}
+
+\blockhead{publications}
+
+{\footnotesize
+\def\arraystretch{1.1}
+\setstretch{1.2}
+\begin{longtable}{rl}
+
+\publi{2021}
+    {TRAPPIST-1h transmission spectrum: Knowning the star \hspace{2pt} {\color{black!30}\normalfont in preparation} }
+    {\underline{Garcia L. J.}, Moran S., Rackham B. V. et al.}
+    {}
+
+\publi{2021}
+    {prose: Modular Astronomy in python \hspace{2pt} {\color{black!30}\normalfont in preparation} }
+    {\underline{Garcia L. J.} \& the SPECULOOS team}
+    {}
+
+\publi{2018}
+    {Validation of a CCD cosmic ray event simulator against Gaia in-orbit data}
+    {\underline{Garcia L.}, Prod'homme T., Lucsanyi D. et al.}
+    {\href{http://doi.org/10.1117/12.2314090}{Proc. SPIE 10709}}
+
+\publi{2017}
+    {Performance assessment of pre-series fast beam wire scanner prototypes for the upgrade of the CERN LHC
+    injector complex}
+    {Sirvent J. L., \underline{Garcia L.}, Tassan-Viol J. et al.}
+    {\href{http://accelconf.web.cern.ch/ibic2017/papers/wepcc03.pdf}{Proc. IBIC2017}}
+
+\end{longtable}
+}
+
+\hspace{1.1cm}
+
+\newpage
+\begin{center}
+    \small 
+    and 9 other collaborations: 
+\end{center}
+
+\vspace{-0.5cm}
+
+{\footnotesize
+\def\arraystretch{1.1}
+\setstretch{1.1}
+\begin{longtable}{rl}
+\publi{2021}
+    {SPECULOOS: Ultracool dwarf transit survey}
+    {M. Gillon, E. Ducrot, F. J. Pozuelos et al. (including Garcia L. J.)}
+    {\href{https://doi.org/10.1051\%2F0004-6361\%2F202038827}{A\&A, 645 A120}}
+
+\publi{2021}
+    {Six transiting planets and a chain of Laplace resonances in TOI-178}
+    {Leleu, A., Alibert, Y., Hara, N. C. et al. (including Garcia L. J.)}
+    {\href{https://arxiv.org/abs/2101.09260}{arXiv:2101.09260}}
+
+\publi{2020}
+    {Development of the SPECULOOS exoplanet search project}
+    {Sebastian, D., Pedersen, P. P., Murray, C. A. et al. (including Garcia L. J.)}
+    {\href{http://doi.org/10.1117/12.2563563}{Proc. SPIE 11445}}
+
+\publi{2020}
+    {A super-Earth and a sub-Neptune orbiting the bright, quiet M3 dwarf TOI-1266}
+    {Demory, B. -O., Pozuelos, F. J., G\'omez Maqueo Chew, Y. et al. (including Garcia L. J.)}
+    {\href{http://doi.org/10.1051/0004-6361/202038616}{A\&A, 642 A49}}
+
+\publi{2020}
+    {$\pi$ Earth: A 3.14 day Earth-sized Planet from K2's Kitchen Served Warm by the SPECULOOS Team}
+    {Niraula, Prajwal, Wit, Julien de, Rackham, Benjamin V. et al. (including Garcia L. J.)}
+    {\href{http://doi.org/10.3847/1538-3881/aba95f}{AJ, 160 172}}
+
+\publi{2020}
+    {GJ 273: on the formation, dynamical evolution, and habitability of a planetary system hosted by an M dwarf at 3.75 parsec}
+    {Pozuelos, Francisco J., Su\'arez, Juan C., de El\'ia, Gonzalo C. et al. (including Garcia L. J.)}
+    {\href{http://doi.org/10.1051/0004-6361/202038047}{A\&A, 641 A23}}
+
+\publi{2020}
+    {The SPECULOOS Project: New targets to hunt planets of Ultra-cool dwarfs.}
+    {Sebastian, Daniel, Gillon, Michael, Ducrot, Elsa et al. (including Garcia L. J.)}
+    {\href{https://ui.adsabs.harvard.edu/abs/2020EPSC...14..337S/abstract}{EPSC, 337}}
+
+\publi{2020}
+    {Complex Modulation of Rapidly Rotating Young M Dwarfs: Adding Pieces to the Puzzle}
+    {G\"unther, Maximilian N., Berardo, David A., Ducrot, Elsa et al. (including Garcia L. J.)}
+    {\href{https://arxiv.org/abs/2008.11681}{arXiv:2008.11681}}
+
+\publi{2020}
+    {Photometry and performance of SPECULOOS-South}
+    {C A Murray, L Delrez, P P Pedersen, et al. (including Garcia L. J.)}
+    {\href{https://doi.org/10.1093/mnras/staa1283}{MNRAS, 495 2446-2457}}
+
+\end{longtable}
+}
+
+\vspace{0.4cm}
+\blockhead{Posters}
+
+{\footnotesize
+\def\arraystretch{1.1}
+\setstretch{1.2}
+\begin{tabular}{ll}
+\publi{2021}
+    {TRAPPIST-1h transmission spectrum: Knowning the star}
+    {\underline{Garcia L. J.}, Moran S., Rackham B. V. et al.}
+    {SAG21 symposium (online)}
+\publi{2019}
+    {specphot: a suite for SPECULOOS data analysis}
+    {\underline{Garcia L. J.} \& the SPECULOOS team}
+    {TRAPPIST-1 conference (Liège, Belgium)}
+\end{tabular}
+}
+
+\vspace{0.8cm}
+\blockhead{Schools}
+\vspace{-0.1cm}
+{\footnotesize
+\def\arraystretch{1.1}
+\setstretch{1.2}
+\begin{tabular}{rl}
+\publi{2019}
+    {Evry Schatzman school: Star-planets interactions}
+    {}{\hspace{-2pt}Aussois, France}
+\end{tabular}
+}
+\vspace{0.4cm}
+
+\blockhead{Miscellaneous}
+\vspace{-0.2cm}
+\begin{center}
+{\small Long distance running\space\space - \space\space Hiking\space\space - \space\space Illustration\space\space - \space\space open-source dev}
+\end{center}
+
+\end{document}
