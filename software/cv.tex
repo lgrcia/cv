@@ -33,7 +33,7 @@
     \vspace{0.2cm}
     {\faEnvelope\hspace{2pt}  \href{mailto:lionel_garcia@live.fr}{lionel\_garcia@live.fr} \hspace{5pt} \href{https://github.com/lgrcia}{\faGithub\hspace{2pt}lgrcia}}\\
     \vspace{0.1cm}
-    {\faGlobe\hspace{2pt} \href{https://lgrcia.gthub.io}{https://lgrcia.github.io}}
+    {\faGlobe\hspace{2pt} \href{https://lgrcia.github.io}{https://lgrcia.github.io}}
 \end{center}
 
 % \newcommand{\block}[5]{
@@ -109,6 +109,7 @@
 \end{blocks}
 
 \newpage
+
 \blockhead{teaching}
 \begin{blocks}[1.2]
     \blocktitle{2019 - 2021}{University of Liège} & \blockcontent{Mechanics 101}{Tutorials - Undergraduate}{From Newtonian mechanics to the study of solids' motion
@@ -118,71 +119,44 @@
     {} & \blockcontent{Astronomical observations}{Tutorials and Lectures - Graduate}{Telescope observations and applications to Astrophysics (including practical sessions at the Oukaimeden observatory, Morocco)
     \\\indice{Professor: Emmanuel Jehin}}\\
 \end{blocks}
+
+\blockhead{software developments}
+% http://mirrors.ibiblio.org/CTAN/fonts/fontawesome/doc/fontawesome.pdf
+\begin{blocks}[1.3]
+    \block{}
+    {\textit{prose}\hspace{0.1cm}
+    {\large\href{https://github.com/lgrcia/prose}{\color{black!30}\faGithub\hspace{2pt}}}
+    {\large\href{https://ui.adsabs.harvard.edu/abs/2022MNRAS.509.4817G/abstract}{\color{black!30}\faFileTextO\hspace{2pt}}}}{Image Processing}{Python, LaTeX}{A Python package to build image processing pipelines. Developed for Astronomy to enable transparent research and reproducible products.}
+    \\
+    \block{}
+    {\textit{nuance}\hspace{0.1cm}
+    {\large\href{https://github.com/lgrcia/nuance}{\color{black!30}\faGithub\hspace{2pt}}}}
+    {Signal Processing}{Python, JAX}{A Python package to detect exoplanetary transits in the presence of stellar variability and instrumental noises.}
+    \\
+    \block{}
+    {\textit{SPECULOOS - portal}\hspace{0.1cm}
+    {\large\href{https://lgrcia.github.io/projects/portal/}{\color{black!30}\faGlobe\hspace{2pt}}}}
+    {Web application}{HTML-CSS-JS (VueJS)}{A web-based portal to monitor the SPECULOOS transit survey nightly observations (interactive schedule, data visualization, comments and flagging system, diagnostics, and more)}
+    \\
+    \block{}
+    {\textit{SPECULOOS - workflows}\hspace{0.1cm}}
+    {Data analysis}{Python, snakemake}{Developement of data analysis workflows for the automatic analysis and reporting of SPECULOOS observations (Manager of the related working group).}
+    \\
+    \block{}
+    {\textit{TRAPPIST - ESO public release}\hspace{0.1cm}}
+    {Data analysis}{Python, snakemake, prose}{Reduction and first release of the TRAPPIST telescope photometric products (beginning 2023 with ESO).}
+\end{blocks}
+
+\begin{center}
+    \color{black!70}
+    \subheader{Related skills:}\hspace{0.2cm} Python\space\space C++ \space\space C\space\space Julia\space\space JS - HTML - CSS\space\space LaTeX\space\space git
+
+\end{center}
+\vspace{0.4cm}
+
 \vspace{0.4cm}
 
 \newcommand{\publi}[4]{{\color{black!60}#1} & \makecell[lt]{\textbf{#2}\\\rule{0pt}{4pt}{\color{black!60} #3 \hspace{1pt} \textit{#4}}} \\
-}
-
-\vspace{0.8cm}
-\blockhead{Grants}
-\vspace{-0.1cm}
-
-\begin{blocks}[1.1]
-    \block{2021}{FRIA Doctoral scholarship}{F.R.S.–FNRS}{}{2 years full-time research funding}\\
-\end{blocks}
-
-
-\blockhead{Skills}
-\vspace{0.4cm}
-
-\begin{center}
-    \centering
-    \setstretch{1.4}
-    \begin{minipage}[c]{0.3\linewidth}
-        \centering
-        \subheader{Languages}\\
-        \vspace{0.3cm}
-        English and French (fluent)\\
-        Spanish (intermediate)
-    \end{minipage}
-    \begin{minipage}[c]{0.3\linewidth}
-        \centering
-        \subheader{Programming }\\
-        \vspace{0.3cm}
-        Python\space\space C++ \space\space C\space\space Julia\\
-        JS - HTML - CSS\space\space LaTeX\space\space  git
-    \end{minipage}
-\end{center}
-
-\newpage
-
-\blockhead{publications}
-\vspace{-0.5cm}
-\begin{center}
-    \small\color{black!35}
-    First-authored
-\end{center}
-
-{\footnotesize
-\def\arraystretch{1.1}
-\setstretch{1.2}
-\begin{longtable}{rl}
-    \input{inprep.tex}
-    \input{firstauthored.tex}
-\end{longtable}
-}
-
-\begin{center}
-    \color{black!50}
-    Other collaborations
-\end{center}
-
-{\footnotesize
-\def\arraystretch{1.1}
-\setstretch{1}
-\begin{longtable}{ll}
-\input{publications.tex}
-\end{longtable}
 }
 
 \vspace{0.4cm}
@@ -225,34 +199,43 @@
 }
 
 
-% \vspace{0.8cm}
-% \blockhead{Grants}
-% \vspace{-0.1cm}
-% {\footnotesize
-% \def\arraystretch{1.1}
-% \setstretch{1}
-% \begin{tabular}{rl}
-% \publi{2021}
-%     {FRIA Doctoral scholarship}
-%     {}{\hspace{-2pt}Belgian Fund for Scientific Research (F.R.S.–FNRS)}
-% \end{tabular}
-% }
-
-
 \vspace{1cm}
 
-\blockhead{Schools}
+\blockhead{Grants}
 \vspace{-0.1cm}
+
+\begin{blocks}[1.1]
+    \block{2021}{FRIA Doctoral scholarship}{F.R.S.–FNRS}{}{2 years full-time research funding}\\
+\end{blocks}
+
+\blockhead{publications}
+\vspace{-0.5cm}
+\begin{center}
+    \small\color{black!35}
+    First-authored
+\end{center}
+
 {\footnotesize
 \def\arraystretch{1.1}
 \setstretch{1.2}
-\begin{tabular}{rl}
-\publi{2019}
-    {Evry Schatzman school: Star-planets interactions}
-    {}{\hspace{-2pt}Aussois, France}
-\end{tabular}
+\begin{longtable}{rl}
+    \input{../papers/inprep.tex}
+    \input{../papers/firstauthored.tex}
+\end{longtable}
 }
-\vspace{0.4cm}
+
+\begin{center}
+    \color{black!50}
+    Other collaborations
+\end{center}
+
+{\footnotesize
+\def\arraystretch{1.1}
+\setstretch{1}
+\begin{longtable}{ll}
+\input{../papers/publications.tex}
+\end{longtable}
+}
 
 \blockhead{Miscellaneous}
 \vspace{-0.2cm}
