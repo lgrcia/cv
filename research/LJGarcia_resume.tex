@@ -42,8 +42,8 @@
 % }
 
 \newcommand{\block}[5]{
-    \makecell[tr]{\color{black!80}\textbf{#1}\\ {\color{black!50}#3} \\ {\color{black!30}#4}}& 
-    \makecell[tl]{{\color{black!70}\textbf{#2}} \\ \parbox[t]{9.2cm}{#5}}
+\makecell[tr]{\color{black!80}\textbf{#1}\\ {\color{black!50}#3} \\ {\color{black!30}#4}}&
+\makecell[tl]{{\color{black!70}\textbf{#2}} \\ \parbox[t]{9.2cm}{#5}}
 }
 
 % \newcommand{\block}[5]{
@@ -54,7 +54,7 @@
 \newcommand{\header}[1]{{\color{black!80}\large\MakeUppercase{\textbf{#1}}}}
 \newcommand{\subheader}[1]{{\color{black!80}\normalsize\textbf{#1}}}
 \newcommand{\blocktitle}[2]{
-    \makecell[tr]{{\color{black!70}\textbf{#2}}\\{\color{black!50}#1}}
+\makecell[tr]{{\color{black!70}\textbf{#2}}\\{\color{black!50}#1}}
 }
 
 \newcommand{\blockcontent}[3]{
@@ -76,20 +76,21 @@
 
 \newenvironment{blocks}[1][1.3]
 {\bgroup
-\def\arraystretch{#1}
-\setstretch{#1}
-\small
-\begin{tabular}{@{}p{4cm}r}}
-{\end{tabular}
-\egroup
-\vspace{1cm}
-} 
+    \def\arraystretch{#1}
+    \setstretch{#1}
+    \small
+    \begin{tabular}{@{}p{4cm}r}}
+        {\end{tabular}
+    \egroup
+    \vspace{1cm}
+}
 
 \vspace{0.5cm}
 
 
 \blockhead{education}
 \begin{blocks}[1.1]
+    \block{Sept. 2023 - now}{Research fellow}{Flatiron Institute}{nearby, USA}{To do}\\
     \block{2019 - 2023}{PhD in Astronomy}{University of Liège}{Belgium}{Towards the detailed atmospheric characterization of temperate rocky exoplanets \\ \indice{Supervisor: Michaël Gillon (SPECULOOS \& TRAPPIST teams)}}\\
     \block{2016 - 2017}{MSc in Computer Science}{University of Bordeaux}{France}{High performance computing and Image processing}\\
     \block{2014 - 2017}{MSc in Optical Instrumentation}{Institut d'Optique}{France}{Photonics and optical Instrumentation}\\
@@ -102,22 +103,22 @@
 \begin{blocks}[1.1]
     \block{2019 - 2021}{Teaching assistant}{University of Liège}{Belgium}{Supervision of tutorial sessions at undergraduate and graduate levels \\ \indice{150h/year -- combined with half-time research}}\\
     \block{2018 (1 year)}{Young Graduate Trainee}{ESA-ESTEC}{Netherlands}{Development of novel strategies to build better spacecraft precursor
-    models}\\
+        models}\\
     \block{2017 (6 months)}{Technical Student}{CERN}{Switzerland}{Characterization and prototyping of next-generation Beam Wire
-    Scanners for the LHC injectors upgrade}\\
+        Scanners for the LHC injectors upgrade}\\
     \block{2016 (3 months)}{Trainee}{ESA-ESTEC}{Netherlands}{Development and validation of a CCD cosmic ray impact simulator against
-    Gaia in-orbit data}\\
+        Gaia in-orbit data}\\
 \end{blocks}
 
 \newpage
 \blockhead{teaching}
 \begin{blocks}[1.2]
     \blocktitle{2019 - 2021}{University of Liège} & \blockcontent{Mechanics 101}{Tutorials - Undergraduate}{From Newtonian mechanics to the study of solids' motion
-    \\\indice{Professor: Pierre Dauby}} \\
+        \\\indice{Professor: Pierre Dauby}} \\
     {} & \blockcontent{Mathematical modeling for the environment}{Tutorials - Graduate}{Dynamical modeling of populations and their environments
-    \\\indice{Professor: Marilaure Grégoire}} \\
+        \\\indice{Professor: Marilaure Grégoire}} \\
     {} & \blockcontent{Astronomical observations}{Tutorials and Lectures - Graduate}{Telescope observations and applications to Astrophysics (including practical sessions at the Oukaimeden observatory, Morocco)
-    \\\indice{Professor: Emmanuel Jehin}}\\
+        \\\indice{Professor: Emmanuel Jehin}}\\
 \end{blocks}
 \vspace{0.4cm}
 
@@ -129,6 +130,7 @@
 \vspace{-0.1cm}
 
 \begin{blocks}[1.1]
+    \block{2023}{Flatiron Research Fellowship}{Simons Foundation}{}{2 years full-time research funding}\\
     \block{2021}{FRIA Doctoral scholarship}{F.R.S.–FNRS}{}{2 years full-time research funding}\\
 \end{blocks}
 
@@ -182,23 +184,23 @@
 \def\arraystretch{1.1}
 \setstretch{1}
 \begin{longtable}{ll}
-\input{../papers/publications.tex}
+    \input{../papers/publications.tex}
 \end{longtable}
 }
 
+\newpage
 \vspace{0.4cm}
 \blockhead{Communications}
 \vspace{-0.5cm}
 \begin{center}
     \small\color{black!35}
-    $\star$ denotes invited
 \end{center}
 
 {\footnotesize
 \def\arraystretch{1.1}
 \setstretch{1.2}
 \begin{tabular}{ll}
-\input{../talks/talks.tex}
+    \input{../talks/talks.tex}
 \end{tabular}
 }
 
@@ -235,7 +237,7 @@
 \blockhead{Miscellaneous}
 \vspace{-0.2cm}
 \begin{center}
-{\small Ultra running\space\space - \space\space Illustration\space\space }
+    {\small Ultra running\space\space - \space\space Illustration\space\space }
 \end{center}
 
 \end{document}
